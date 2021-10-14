@@ -1,7 +1,7 @@
-## UCVA
+# UCVA
 University of Calgary - Vet Application
 
-# Developers
+## Developers
 - Marko Mijovic
 - Zach Frena
 - Meet Pandya
