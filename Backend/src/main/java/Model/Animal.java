@@ -1,5 +1,14 @@
 package Model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.Value;
+
+@Value
+@AllArgsConstructor
+@Getter
+@Setter
 public class Animal {
 
     private int tattooNumber;
