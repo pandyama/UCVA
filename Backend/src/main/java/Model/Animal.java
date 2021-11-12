@@ -21,6 +21,4 @@ public class Animal {
     private int active;
     private int RFID;
     private int microchip;
-
-
 }
