@@ -7,5 +7,7 @@ public class Constants {
     public static final String PLAIN_TXT = "text/plain";
     public static final String MALE = "MALE";
     public static final String FEMALE = "FEMALE";
+    public static final String GET = "GET";
+    public static final String POST = "POST";
 }
 
