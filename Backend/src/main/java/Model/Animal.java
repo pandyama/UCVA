@@ -1,14 +1,15 @@
 package Model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.Value;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import lombok.*;
 
-@Value
-@AllArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@JsonDeserialize(builder = Animal.AnimalBuilder.class)
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Builder(builderClassName = "AnimalBuilder", toBuilder = true)
 public class Animal {
 
     private int tattooNumber;
@@ -28,6 +29,10 @@ public class Animal {
     private String specialInstructions;
     private String specialDiet;
     private int active;
-    private int RFID;
+    private int rfid;
     private int microchip;
+
+    @JsonPOJOBuilder(withPrefix = "")
+    public static class AnimalBuilder{}
+
 }
