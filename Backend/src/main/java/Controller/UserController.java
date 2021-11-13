@@ -1,6 +1,7 @@
 package Controller;
 
 import Helper.Constants;
+import Helper.HelperMethods;
 import com.sun.net.httpserver.HttpServer;
 
 public class UserController {
@@ -13,7 +14,7 @@ public class UserController {
 
     public void login() {
         this.server.createContext("/login", (exchange -> {
-            if (checkRequest(Constants.POST, exchange.getRequestMethod())) {
+            if (HelperMethods.checkRequest(Constants.POST, exchange.getRequestMethod())) {
                 // Authenticate User by generating a JWT and sending it back
             }
         }));
@@ -21,14 +22,12 @@ public class UserController {
 
     public void logout(){
         this.server.createContext("/logout", (exchange -> {
-            if (checkRequest(Constants.POST, exchange.getRequestMethod())) {
+            if (HelperMethods.checkRequest(Constants.POST, exchange.getRequestMethod())) {
                 // Destroy user's JWT token and send success response
             }
         }));
     }
 
-    public boolean checkRequest(String s1, String s2) {
-        return s1.equals(s2);
-    }
+
 
 }
