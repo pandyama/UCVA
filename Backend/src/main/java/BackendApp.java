@@ -1,6 +1,8 @@
 import Controller.AnimalController;
+import Controller.UserController;
 import Helper.Constants;
 import Model.Animal;
+import Model.User;
 import com.sun.net.httpserver.HttpServer;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
@@ -24,7 +26,9 @@ public class BackendApp {
         }
 
         AnimalController a1 = new AnimalController(server);
+        UserController u1 = new UserController(server);
         a1.addAnimal(server);
+        u1.login(server);
         //Create a Dummy Animal
         Animal animal = new Animal(
                 1, "Calgary1", "Buddy", 2,
@@ -54,9 +58,24 @@ public class BackendApp {
         obj.put("rfid",animal.getRfid());
         obj.put("microchip",animal.getMicrochip());
 
+        User testUser = new User("Meet",
+                "Student",
+                "Student",
+                "mp1234");
+
+        JSONObject user = new JSONObject();
+        user.put("username","meet");
+        user.put("role","student");
+        user.put("designation","nAdmin");
+        user.put("password","mp1234");
+
 
         HttpResponse<JsonNode> jsonPost = Unirest.post("http://localhost:8100/addAnimal")
                 .header("accept", "application/json").body(obj).asJson();
         System.out.println(jsonPost.getBody().getObject().get("message"));
+
+        HttpResponse<JsonNode> jsonLogin = Unirest.post("http://localhost:8100/login")
+                .header("accept", "application/json").body(user).asJson();
+        System.out.println(jsonLogin.getBody().getObject().get("token"));
     }
 }
