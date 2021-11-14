@@ -29,6 +29,7 @@ public class BackendApp {
         UserController u1 = new UserController(server);
         a1.addAnimal(server);
         u1.login(server);
+        u1.verifyToken(server);
         //Create a Dummy Animal
         Animal animal = new Animal(
                 1, "Calgary1", "Buddy", 2,
@@ -77,5 +78,13 @@ public class BackendApp {
         HttpResponse<JsonNode> jsonLogin = Unirest.post("http://localhost:8100/login")
                 .header("accept", "application/json").body(user).asJson();
         System.out.println(jsonLogin.getBody().getObject().get("token"));
+
+        JSONObject token = new JSONObject();
+        token.put("token",jsonLogin.getBody().getObject().get("token"));
+
+        HttpResponse<JsonNode> verifyToken = Unirest.post("http://localhost:8100/verifyToken")
+                .header("accept","application/json").body(token).asJson();
+        System.out.println(verifyToken.getBody().getObject().get("message"));
+
     }
 }
