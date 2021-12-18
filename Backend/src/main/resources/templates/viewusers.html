@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Test view user</title>
+</head>
+<body>
+    <div>
+        <h1>Settings</h1>
+        <div role="alert" th:text="${success}" th:if="${success}"/>
+        <div role="alert" th:text="${error}" th:if="${error}"/>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                UserID is :
+                <p th:text="${testUser.userID}"/>
+            </tr>
+            <tr>
+                User Email is :
+                <p th:text="${testUser.email}"/>
+            </tr>
+            <tr>
+                User Name is :
+                <p th:text="${testUser.username}"/>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
