@@ -1,10 +1,10 @@
-# Final-Project
+# Fullstack Web Application using React and Java with Spring
 - Final Project for ENSF607 - M.Eng in Software Engineering at University of Calgary
 - Project_SQL.sql file contains all the CREATE and INSERT statements to setup a dummy database
 
 ## TECH
 - Frontend: React, Bulma CSS Framework
-- Backend: Java SpringFramework with MySQL Database, following MVC pattern
+- Backend: Java Spring Framework with MySQL Database, following MVC pattern
 - Authentication: JWT using Auth0 Library
 
 ## WHO - Developers
