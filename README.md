@@ -1,4 +1,4 @@
-# Fullstack Web Application using React and Java with Spring
+# Fullstack Web App using React & Java with Spring
 - Final Project for ENSF607 - M.Eng in Software Engineering at University of Calgary
 - Project_SQL.sql file contains all the CREATE and INSERT statements to setup a dummy database
 
