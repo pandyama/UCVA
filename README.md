@@ -51,9 +51,7 @@ The API code is split into 4 packages - **Controller**, **Exception**, **Helper*
 | /manageUsers     | Manage Users in the System        |
 
 --------------------------------------------------------
-## HOW
-- In order to run the code, you just need to run the **BackendApplication.java** and it will start the spring server
-- If you are using an IDE like IntelliJ or Eclipse, after cloning the repo, make sure to create a Configuration that's pointed to **BackendApplication.java**
+
 ## WHY
 - This is the Final Project for ENSF607 course at University of Calgary
 - The project is designed for the Vet Department at University of Calgary
