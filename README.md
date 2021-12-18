@@ -1,9 +1,11 @@
-# Final-Project
-607 final project
+# Fullstack Web App using React & Java with Spring
+- Final Project for ENSF607 - M.Eng in Software Engineering at University of Calgary
+- Project_SQL.sql file contains all the CREATE and INSERT statements to setup a dummy database
 
-## FINAL PROJECT VIDEO PRESENTATION LINK:
-
-https://drive.google.com/file/d/1hrnI1BKfp1Hcqx7jl1oHRIG3HyDwCegW/view?usp=sharing
+## TECH
+- Frontend: React, Bulma CSS Framework
+- Backend: Java Spring Framework with MySQL Database, following MVC pattern
+- Authentication: JWT using Auth0 Library
 
 ## WHO - Developers
 - Zachary Frena
@@ -49,9 +51,17 @@ The API code is split into 4 packages - **Controller**, **Exception**, **Helper*
 | /manageUsers     | Manage Users in the System        |
 
 --------------------------------------------------------
-## HOW
-- In order to run the code, you just need to run the **BackendApplication.java** and it will start the spring server
-- If you are using an IDE like IntelliJ or Eclipse, after cloning the repo, make sure to create a Configuration that's pointed to **BackendApplication.java**
+
 ## WHY
 - This is the Final Project for ENSF607 course at University of Calgary
 - The project is designed for the Vet Department at University of Calgary
+
+## Few Screenshots of the App can be seen below
+
+![1](https://github.com/pandyama/UCVA/blob/main/c1.PNG)
+
+![2](https://github.com/pandyama/UCVA/blob/main/c2.PNG)
+
+![3](https://github.com/pandyama/UCVA/blob/main/c3.PNG)
+
+![3](https://github.com/pandyama/UCVA/blob/main/c4.PNG)
