@@ -56,11 +56,10 @@ The API code is split into 4 packages - **Controller**, **Exception**, **Helper*
 
 ## Few Screenshots of the App can be seen below
 
-![1](https://github.com/pandyama/UCVA/blob/master/c1.PNG)
+![1](https://github.com/pandyama/UCVA/blob/main/c1.PNG)
 
-![2](https://github.com/pandyama/UCVA/blob/master/c2.PNG)
+![2](https://github.com/pandyama/UCVA/blob/main/c2.PNG)
 
-![3](https://github.com/pandyama/UCVA/blob/master/c3.PNG)
+![3](https://github.com/pandyama/UCVA/blob/main/c3.PNG)
 
-![3](https://github.com/pandyama/UCVA/blob/master/c4.PNG)
-
+![3](https://github.com/pandyama/UCVA/blob/main/c4.PNG)
