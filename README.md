@@ -1,9 +1,7 @@
 # Final-Project
-607 final project
+- Final Project for ENSF607 - M.Eng in Software Engineering at University of Calgary
+- Project_SQL.sql file contains all the CREATE and INSERT statements to setup a dummy database
 
-## FINAL PROJECT VIDEO PRESENTATION LINK:
-
-https://drive.google.com/file/d/1hrnI1BKfp1Hcqx7jl1oHRIG3HyDwCegW/view?usp=sharing
 
 ## WHO - Developers
 - Zachary Frena
