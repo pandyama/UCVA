@@ -53,3 +53,14 @@ The API code is split into 4 packages - **Controller**, **Exception**, **Helper*
 ## WHY
 - This is the Final Project for ENSF607 course at University of Calgary
 - The project is designed for the Vet Department at University of Calgary
+
+## Few Screenshots of the App can be seen below
+
+![1](https://github.com/pandyama/UCVA/blob/master/c1.PNG)
+
+![2](https://github.com/pandyama/UCVA/blob/master/c2.PNG)
+
+![3](https://github.com/pandyama/UCVA/blob/master/c3.PNG)
+
+![3](https://github.com/pandyama/UCVA/blob/master/c4.PNG)
+
